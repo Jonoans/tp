@@ -21,7 +21,7 @@ public class CsvWriter {
             this.writer = new CSVWriter(fileWriter, CSVWriter.DEFAULT_SEPARATOR,
                                         CSVWriter.DEFAULT_QUOTE_CHARACTER,
                                         CSVWriter.DEFAULT_ESCAPE_CHARACTER,
-                                        System.getProperty("line.separator"));
+                                        "\n");
         } catch (IOException e) {
             throw new DukeException("Cannot create file");
         }
