@@ -365,16 +365,16 @@ public class StorageTest {
         void saveDataWorkingWindows() throws DukeException, IOException {
             storage.save();
             File output = new File("category-store.csv");
-            File testFile = new File("./TestCSV/Windows/valid/category-store.csv");
+            File testFile = new File("./TestCSV/Linux/valid/category-store.csv");
             assertEquals(true, FileUtils.contentEquals(output, testFile));
             output = new File("goal-store.csv");
-            testFile = new File("./TestCSV/Windows/valid/goal-store.csv");
+            testFile = new File("./TestCSV/Linux/valid/goal-store.csv");
             assertEquals(true, FileUtils.contentEquals(output, testFile));
             output = new File("income-store.csv");
-            testFile = new File("./TestCSV/Windows/valid/income-store.csv");
+            testFile = new File("./TestCSV/Linux/valid/income-store.csv");
             assertEquals(true, FileUtils.contentEquals(output, testFile));
             output = new File("expense-store.csv");
-            testFile = new File("./TestCSV/Windows/valid/expense-store.csv");
+            testFile = new File("./TestCSV/Linux/valid/expense-store.csv");
             assertEquals(true, FileUtils.contentEquals(output, testFile));
         }
 
