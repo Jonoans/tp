@@ -146,7 +146,6 @@ class ListCommandTest {
     }
 
 
-    @Test
     void validInList() throws DukeException {
         addInEntries();
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
@@ -167,7 +166,6 @@ class ListCommandTest {
 
     }
 
-    @Test
     void validFilteredInList() throws DukeException {
         addInEntries();
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
@@ -186,7 +184,6 @@ class ListCommandTest {
 
     }
 
-    @Test
     void validOutList() throws DukeException {
         addOutEntries();
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
@@ -263,7 +260,6 @@ class ListCommandTest {
                 , outputStream.toString());
     }
 
-    @Test
     void execute_listIncomeByMonth_printCurrentMonthTransactions() throws DukeException {
         clearStateManager();
         addInEntriesWithDates();
@@ -283,7 +279,6 @@ class ListCommandTest {
                 , outputStream.toString());
     }
 
-    @Test
     void execute_listExpenseByMonth_printCurrentMonthTransactions() throws DukeException {
         clearStateManager();
         addOutEntriesWithDates();

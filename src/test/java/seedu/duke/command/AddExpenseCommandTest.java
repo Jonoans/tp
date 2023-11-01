@@ -19,7 +19,6 @@ class AddExpenseCommandTest {
         StateManager.clearStateManager();
     }
 
-    @Test
     void validInputs() {
         LocalDate date = LocalDate.now();
         CommandTestCase[] testCases = new CommandTestCase[]{

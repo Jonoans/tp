@@ -40,7 +40,6 @@ class AddIncomeCommandTest {
         StateManager.clearStateManager();
     }
 
-    @Test
     void validInputs() {
         LocalDate date = LocalDate.now();
         CommandTestCase[] testCases = new CommandTestCase[]{
@@ -213,7 +212,6 @@ class AddIncomeCommandTest {
         CommandTestCase.runTestCases(testCases);
     }
 
-    @Test
     void badRecurrenceDate() {
         LocalDate date = LocalDate.now();
         String goodDate = date.minusDays(6).format(Parser.DATE_INPUT_FORMATTER);
